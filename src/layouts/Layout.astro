@@ -1,26 +1,42 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Basic JokoUI</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/pedihnya.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Basic JokoUI</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jokoui-satire.vercel.app/" />
+    <meta
+      property="og:title"
+      content="JokoUI - Framework Politik Tanpa Ijazah"
+    />
+    <meta
+      property="og:description"
+      content="100% Pengalaman Lapangan, 0% Gelar Akademik. Dari kampus kehidupan untuk rakyat sepenuhnya."
+    />
+    <meta property="og:image" content="/pedihnya.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="id_ID" />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
